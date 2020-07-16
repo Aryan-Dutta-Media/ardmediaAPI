@@ -6,10 +6,10 @@ from passlib.hash import pbkdf2_sha256
 from functools import wraps
 from flask import Flask,request,jsonify,make_response
 from conStrings import db1
-from config import DevelopmentConfig
+from config import ProductionConfig
 
 app=Flask(__name__)
-app.config.from_object(DevelopmentConfig())
+app.config.from_object(ProductionConfig())
 
 #------------------DECORATOR------------------------
 def apiKey_required(f):
