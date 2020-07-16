@@ -77,7 +77,7 @@ def contact_post():
     except:
         return jsonify({"message":"Invalid Request"})
     output=[]
-    obj={"firstname":arg['firstname'],"lastname":arg['lastname'],"email":arg['email'],"message":arg['message']}
+    obj={"firstname":arg['firstname'],"lastname":arg['lastname'],"email":arg['email'],"contact":arg['contact'],"message":arg['message']}
     send_status=db1.contact.insert_one(obj)
     if send_status:
         return jsonify({'message':"Success"})
