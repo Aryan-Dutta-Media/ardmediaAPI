@@ -8,7 +8,7 @@
 * Flask
 
 ## Live Server Status
-www.aryanduttamedia.herokuapp.com
+www.ardmedia.herokuapp.com
 
 ## Github Steps:
 * Fork the repository to your Github account
