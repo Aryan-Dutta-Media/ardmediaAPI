@@ -109,7 +109,7 @@ class ApiTests(unittest.TestCase):
         self.assertEqual(content_type,'application/json')
         self.assertEqual(status,403)
     def testSubscribeRouteGetRequestGamma(self):     #WITH CORRECT API KEY  
-        response=self.app.get('/subscribe?api_key=')
+        response=self.app.get('/subscribe?api_key=9847c593c7c5a0fb93d08acc913b72eddef37fd594625f6c090bb5af08e33ea8')
         status=response.status_code       #EXPECTED 200
         content_type=response.content_type
         self.assertEqual(content_type,'application/json')
