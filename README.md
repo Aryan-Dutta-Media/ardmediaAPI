@@ -22,6 +22,8 @@ www.aryanduttamedia.herokuapp.com
 
 ## Steps to run the API:
 * ```cd ardmediaAPI```
+* Create a virtual environment ```py -3 -m venv venv```
+* Activate virtual environment ```venv\Scripts\activate``` (for Windows) and ```venv\bin\activate``` (for Mac)
 * ```pip install -r requirements.txt```(only for the first time after clonning) then ```python app.py```
 * Add or Edit the routes and functions in the file app.py
 
@@ -31,10 +33,46 @@ www.aryanduttamedia.herokuapp.com
 * Test the API with POSTMAN
 
 Example for GET request :
-* Set the URL to ```www.aryanyanduttamedia.herokuapp.com/``` get all the entries.
+* Set the URL to ```www.ardmedia.herokuapp.com/contact?api_key=<your_key>``` get all the entries from the contact form.
+* Set the URL to ```www.ardmedia.herokuapp.com/landing?api_key=<your_key>``` get all the entries from landing form.
+* Set the URL to ```www.ardmedia.herokuapp.com/subscribe?api_key=<your_key>``` get all the entries from subscribe form.
 
-Example for POST reqest :
-* Set the URL to ```www.aryanduttamedia.herokuapp.com/``` to update any entry.
+Example for POST request :
+* Set the URL to ```www.ardmedia.herokuapp.com/contact?api_key=<your_key>``` to update any entry from contact form.<br><br>
 
+    Sample JSON Data to contact route:
+    ```json
+    {
+        "firstname": "testName",
+        "lastname": "testName",
+        "email": "sample@gmail.com",
+        "contact": 1234567890,
+        "message": "Hello Everyone"
+    }
+    ```
+    <br>
+* Set the URL to ```www.ardmedia.herokuapp.com/landing?api_key=<your_key>?api_key=<your_key>``` to update any entry from landing form.<br>
+    Sample JSON Data to landing route:
+    ```json
+    {
+        "firstname": "testName",
+        "email": "sample@gmail.com"
+    }
+    ```
+    <br>
+* Set the URL to ```www.ardmedia.herokuapp.com/subscribe?api_key=<your_key>``` to update any entry subscribe form.<br>
+Sample JSON Data to subscribe route:
+    ```json
+    {
+        "email": "sample@gmail.com"
+    }
+    ```
+<br>
 Example for DELETE request :
-* Set the URL to ```www.aryanduutamedia.herokuapp.com``` to delete any entry.
+
+* Set the URL to ```www.ardmedia.herokuapp.com/contact?api_key=<your_key>``` to delete any entry from contact form.
+
+* Set the URL to ```www.ardmedia.herokuapp.com/landing?api_key=<your_key>``` to delete any entry from landing form.
+
+* Set the URL to ```www.ardmedia.herokuapp.com/subscribe?api_key=<your_key>``` to delete any entry from subscribe form.
+
