@@ -1,16 +1,16 @@
-#Aryan Dutta Media Backend Forms API
+# Aryan Dutta Media Backend Forms API
 
-#####An API for handling GET/POST request from the forms and dump it in the Database.
+##### An API for handling GET/POST request from the forms and dump it in the Database.
 
-##Technologies Used
+## Technologies Used
 * Python
 * MongoDB
 * Flask
 
-##Live Server Status
+## Live Server Status
 www.aryanduttamedia.herokuapp.com
 
-##Github Steps:
+## Github Steps:
 * Fork the repository to your Github account
 * Copy the link (ends with a .git) of your forked repository
 * In a folder of your choice in your local machine, run git clone thelinkyoujustcopied.git
@@ -20,12 +20,12 @@ www.aryanduttamedia.herokuapp.com
 * Then finally, do git push origin master.
 * After pushing, go to your forked repository on Github and create a pull request.
 
-##Steps to run the API:
+## Steps to run the API:
 * ```cd ardmediaAPI```
 * ```pip install -r requirements.txt```(only for the first time after clonning) then ```python app.py```
 * Add or Edit the routes and functions in the file app.py
 
-##Testing the API:
+## Testing the API:
 * Locally
 * With LIVE Heroku server :
 * Test the API with POSTMAN
