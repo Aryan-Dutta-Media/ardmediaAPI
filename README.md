@@ -3,9 +3,9 @@
 #####An API for handling GET/POST request from the forms and dump it in the Database.
 
 ##Technologies Used
-*Python
-*MongoDB
-*Flask
+* Python
+* MongoDB
+* Flask
 
 ##Live Server Status
 www.aryanduttamedia.herokuapp.com
